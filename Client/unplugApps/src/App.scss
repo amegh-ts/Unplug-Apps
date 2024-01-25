@@ -1,0 +1,273 @@
+:root {
+    --primary-color: #695cfe;
+    --body-color: #ffffff;
+    --text-color: #ffffff;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    // padding: 10px;
+    overflow: hidden;
+    // background: rgb(255, 201, 201);
+
+    // home*****
+    .Home_Main {
+        height: 100vh;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            width: 100%;
+            display: flex;
+            gap: 20px;
+
+            .cleft {
+                background: var(--body-color);
+                padding: 10px;
+                border-radius: 10px;
+                width: 90%;
+                .c_header {
+                    // background: rgb(122, 142, 76);
+                    text-align: center;
+                    display: flex;
+                    gap: 40px;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+
+                    .title {
+                        background: var(--primary-color);
+                        color: var(--text-color);
+                        width: 100%;
+                        padding: 10px;
+                        border-radius: 10px;
+                    }
+
+                    .ch_top {
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 80%;
+                        width: 100%;
+                        font-size: 20px;
+                        flex-wrap: wrap;
+                        gap: 5px;
+
+                        span {
+                            display: flex;
+                            gap: 10px;
+                            background: rgb(231, 231, 231);
+                            padding: 10px;
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+
+                            input {
+                                background: transparent;
+                                border: 2px solid white;
+                                border-radius: 10px;
+                                font-size: 18px;
+                                padding: 8px;
+                                outline: none;
+                            }
+
+                            button {
+                                background: green;
+                                padding: 10px;
+                                color: white;
+                                display: flex;
+                                align-items: center;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                    .ch_bottom {
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 80%;
+                        width: 100%;
+                        font-size: 20px;
+                        flex-wrap: wrap;
+                        gap: 5px;
+
+                        span {
+                            display: flex;
+                            gap: 10px;
+                            background: rgb(231, 231, 231);
+                            padding: 10px;
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+
+                            input {
+                                background: transparent;
+                                border: 2px solid white;
+                                border-radius: 10px;
+                                font-size: 18px;
+                                padding: 8px;
+                                outline: none;
+                            }
+
+                            .acname {
+                                max-width: 600px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .c_contents {
+                    text-align: center;
+                    display: flex;
+                    gap: 40px;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+
+                    .title {
+                        background: var(--primary-color);
+                        color: var(--text-color);
+                        width: 100%;
+                        padding: 10px;
+                        border-radius: 10px;
+                    }
+
+                    .c_table {
+                        width: 100%;
+                        height: 400px;
+
+                        .detailTable {
+                            width: 100%;
+                            border-collapse: collapse;
+
+                            th,
+                            td {
+                                border: 1px solid #ddd;
+                                padding: 8px;
+                                text-align: left;
+                            }
+
+                            td {
+                                input {
+                                    outline: none;
+                                    width: 100%;
+                                    font-size: 18px;
+                                }
+                                button {
+                                    padding: 5px;
+                                    background: red;
+                                    color: white;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cright {
+                background: var(--body-color);
+                padding: 10px;
+                border-radius: 10px;
+
+                .cr_container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+                    gap: 40px;
+
+                    button {
+                        font-size: 25px;
+                        letter-spacing: 2px;
+                        width: 130px;
+                        height: 70px;
+                        cursor: pointer;
+                        background: var(--primary-color);
+                        color: var(--text-color);
+                        border-radius: 10px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    // print ***
+    .bill-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background: var(--body-color);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            text-align: center;
+        }
+
+        .bill-info {
+            margin: 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+            tbody tr:hover {
+                background-color: #f5f5f5;
+            }
+
+            tfoot {
+                font-weight: bold;
+
+                .total-label {
+                    text-align: right;
+                }
+
+                .total-amount {
+                    text-align: right;
+                    font-weight: bold;
+                    color: #333;
+                    font-size: 1.2em;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .back-button{
+            position: relative;
+            left: 0;
+            top: 0;
+
+            button{
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+                border-radius: 50%;
+                padding: 10px;
+                cursor: pointer;
+
+                &:hover{
+                    box-shadow: 0 0 10px rgb(145, 145, 145);
+                }
+            }
+        }
+    }
+}

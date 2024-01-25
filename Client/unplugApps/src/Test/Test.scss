@@ -1,0 +1,68 @@
+.Main {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    .Left {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        .Title {
+            background-color: yellow;
+            text-align: center;
+        }
+
+        .Header {
+            height: 200px;
+            border: 2px black solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            .Htop {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .Hbottom {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+
+        .Details {
+            min-height: 380px;
+            max-height: 600px;
+            overflow-y: scroll;
+            height: auto;
+            border: 2px black solid;
+
+            tr,
+            th {
+                border: 1px solid black;
+            }
+
+            td {
+                border: 1px solid black;
+                text-align: center;
+            }
+        }
+    }
+
+    .RightBar {
+        width: 10%;
+        height: 350px;
+        background-color: #f2db72;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
